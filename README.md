@@ -2,6 +2,8 @@
 
 Pyradise 是專注於 Python 教學的團隊，致力於分享學習經驗，推廣資料科學，人工智慧，讓更多人能參與到這波資訊與人工智慧的學習浪潮。
 
+Hello Py 是去蕪存菁的 Python 快速入門，課程目標在短時間內讓學員上手 Python 以便繼續探索資料科學、人工智慧的應用主題。
+
 ### 課程投影片
 
 - [Google Colab](https://pyradise.github.io/hello-py/00-google-colab.slides#/)
