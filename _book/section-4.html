@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hello Py: Python 程式設計</title>
+  <meta name="description" content="Pyradise 是專注於 Python 教學的團隊，致力於分享學習經驗，推廣資料科學，人工智慧，讓更多人能參與到這波資訊與人工智慧的學習浪潮。">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Hello Py: Python 程式設計" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Pyradise 是專注於 Python 教學的團隊，致力於分享學習經驗，推廣資料科學，人工智慧，讓更多人能參與到這波資訊與人工智慧的學習浪潮。" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hello Py: Python 程式設計" />
+  
+  <meta name="twitter:description" content="Pyradise 是專注於 Python 教學的團隊，致力於分享學習經驗，推廣資料科學，人工智慧，讓更多人能參與到這波資訊與人工智慧的學習浪潮。" />
+  
+
+<meta name="author" content="Pyradise">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="get-started.html">
+<link rel="next" href="ifelse.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Hello Py: Python 程式設計</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 關於 Pyradise</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 講師陣容</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#section-1.1.1"><i class="fa fa-check"></i><b>1.1.1</b> 帽子哥</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#section-1.1.2"><i class="fa fa-check"></i><b>1.1.2</b> 喵貓老師</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#section-1.1.3"><i class="fa fa-check"></i><b>1.1.3</b> 小安老師</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#section-1.1.4"><i class="fa fa-check"></i><b>1.1.4</b> 有勁老師</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="colab.html"><a href="colab.html"><i class="fa fa-check"></i><b>2</b> Google Colab</a><ul>
+<li class="chapter" data-level="2.1" data-path="colab.html"><a href="colab.html#python-"><i class="fa fa-check"></i><b>2.1</b> Python 的開發環境</a></li>
+<li class="chapter" data-level="2.2" data-path="colab.html"><a href="colab.html#-google-colab"><i class="fa fa-check"></i><b>2.2</b> 為什麼選擇 Google Colab？</a></li>
+<li class="chapter" data-level="2.3" data-path="colab.html"><a href="colab.html#google-colab-"><i class="fa fa-check"></i><b>2.3</b> Google Colab 設定</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="get-started.html"><a href="get-started.html"><i class="fa fa-check"></i><b>3</b> 快速上手</a><ul>
+<li class="chapter" data-level="3.1" data-path="get-started.html"><a href="get-started.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 互動式介面</a></li>
+<li class="chapter" data-level="3.2" data-path="get-started.html"><a href="get-started.html#print-"><i class="fa fa-check"></i><b>3.2</b> print 函數</a></li>
+<li class="chapter" data-level="3.3" data-path="get-started.html"><a href="get-started.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 求助</a></li>
+<li class="chapter" data-level="3.4" data-path="get-started.html"><a href="get-started.html#section-3.4"><i class="fa fa-check"></i><b>3.4</b> 註解</a></li>
+<li class="chapter" data-level="3.5" data-path="get-started.html"><a href="get-started.html#-"><i class="fa fa-check"></i><b>3.5</b> 使用 = 賦值</a></li>
+<li class="chapter" data-level="3.6" data-path="get-started.html"><a href="get-started.html#python-3-"><i class="fa fa-check"></i><b>3.6</b> Python 3 的內建函數</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section-4.html"><a href="section-4.html"><i class="fa fa-check"></i><b>4</b> 基本資料類型</a><ul>
+<li class="chapter" data-level="4.1" data-path="section-4.html"><a href="section-4.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 整數與浮點數</a></li>
+<li class="chapter" data-level="4.2" data-path="section-4.html"><a href="section-4.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 文字</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="section-4.html"><a href="section-4.html#format-"><i class="fa fa-check"></i><b>4.2.1</b> .format 方法</a></li>
+<li class="chapter" data-level="4.2.2" data-path="section-4.html"><a href="section-4.html#input-"><i class="fa fa-check"></i><b>4.2.2</b> input 函數</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="section-4.html"><a href="section-4.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 布林</a></li>
+<li class="chapter" data-level="4.4" data-path="section-4.html"><a href="section-4.html#section-4.4"><i class="fa fa-check"></i><b>4.4</b> 邏輯運算符號</a></li>
+<li class="chapter" data-level="4.5" data-path="section-4.html"><a href="section-4.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 資料類型的轉換</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ifelse.html"><a href="ifelse.html"><i class="fa fa-check"></i><b>5</b> 流程控制</a><ul>
+<li class="chapter" data-level="5.1" data-path="ifelse.html"><a href="ifelse.html#section-5.1"><i class="fa fa-check"></i><b>5.1</b> 兩個分支</a></li>
+<li class="chapter" data-level="5.2" data-path="ifelse.html"><a href="ifelse.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 三個分支</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="containers-1.html"><a href="containers-1.html"><i class="fa fa-check"></i><b>6</b> 資料容器一</a><ul>
+<li class="chapter" data-level="6.1" data-path="containers-1.html"><a href="containers-1.html#list"><i class="fa fa-check"></i><b>6.1</b> list</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="containers-1.html"><a href="containers-1.html#-list-"><i class="fa fa-check"></i><b>6.1.1</b> 選出 list 中的元素</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="containers-1.html"><a href="containers-1.html#tuple"><i class="fa fa-check"></i><b>6.2</b> tuple</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="containers-1.html"><a href="containers-1.html#-tuple"><i class="fa fa-check"></i><b>6.2.1</b> 建立 tuple</a></li>
+<li class="chapter" data-level="6.2.2" data-path="containers-1.html"><a href="containers-1.html#tuple-"><i class="fa fa-check"></i><b>6.2.2</b> tuple 元素無法做更動</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="for-loop.html"><a href="for-loop.html"><i class="fa fa-check"></i><b>7</b> For 迴圈</a><ul>
+<li class="chapter" data-level="7.1" data-path="for-loop.html"><a href="for-loop.html#for-"><i class="fa fa-check"></i><b>7.1</b> for 迴圈結構</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="for-loop.html"><a href="for-loop.html#-print"><i class="fa fa-check"></i><b>7.1.1</b> 不只是 print</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="for-loop.html"><a href="for-loop.html#list-comprehension"><i class="fa fa-check"></i><b>7.2</b> List Comprehension</a></li>
+<li class="chapter" data-level="7.3" data-path="for-loop.html"><a href="for-loop.html#enumerate-"><i class="fa fa-check"></i><b>7.3</b> enumerate 函數</a></li>
+<li class="chapter" data-level="7.4" data-path="for-loop.html"><a href="for-loop.html#zip-"><i class="fa fa-check"></i><b>7.4</b> zip 函數</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="containers-2.html"><a href="containers-2.html"><i class="fa fa-check"></i><b>8</b> 資料容器二</a><ul>
+<li class="chapter" data-level="8.1" data-path="containers-2.html"><a href="containers-2.html#set"><i class="fa fa-check"></i><b>8.1</b> set</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="containers-2.html"><a href="containers-2.html#-set"><i class="fa fa-check"></i><b>8.1.1</b> 建立 set</a></li>
+<li class="chapter" data-level="8.1.2" data-path="containers-2.html"><a href="containers-2.html#set-"><i class="fa fa-check"></i><b>8.1.2</b> set 無法選出裡面的元素</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="containers-2.html"><a href="containers-2.html#dict"><i class="fa fa-check"></i><b>8.2</b> dict</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="containers-2.html"><a href="containers-2.html#-dict"><i class="fa fa-check"></i><b>8.2.1</b> 建立 dict</a></li>
+<li class="chapter" data-level="8.2.2" data-path="containers-2.html"><a href="containers-2.html#-dict-"><i class="fa fa-check"></i><b>8.2.2</b> 利用鍵值選出 dict 中的元素</a></li>
+<li class="chapter" data-level="8.2.3" data-path="containers-2.html"><a href="containers-2.html#dict--for-"><i class="fa fa-check"></i><b>8.2.3</b> dict 與 for 迴圈</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="while-loop.html"><a href="while-loop.html"><i class="fa fa-check"></i><b>9</b> while 迴圈</a><ul>
+<li class="chapter" data-level="9.1" data-path="while-loop.html"><a href="while-loop.html#while-"><i class="fa fa-check"></i><b>9.1</b> while 迴圈結構</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="while-loop.html"><a href="while-loop.html#section-9.1.1"><i class="fa fa-check"></i><b>9.1.1</b> 兩種迴圈的運用時機</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>10</b> 自訂函數</a><ul>
+<li class="chapter" data-level="10.1" data-path="functions.html"><a href="functions.html#section-10.1"><i class="fa fa-check"></i><b>10.1</b> 查詢函數的用法</a></li>
+<li class="chapter" data-level="10.2" data-path="functions.html"><a href="functions.html#section-10.2"><i class="fa fa-check"></i><b>10.2</b> 自訂函數</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="functions.html"><a href="functions.html#-docstrings"><i class="fa fa-check"></i><b>10.2.1</b> 函數說明文件 Docstrings</a></li>
+<li class="chapter" data-level="10.2.2" data-path="functions.html"><a href="functions.html#section-10.2.2"><i class="fa fa-check"></i><b>10.2.2</b> 計算圓面積的函數</a></li>
+<li class="chapter" data-level="10.2.3" data-path="functions.html"><a href="functions.html#section-10.2.3"><i class="fa fa-check"></i><b>10.2.3</b> 計算圓周長的函數</a></li>
+<li class="chapter" data-level="10.2.4" data-path="functions.html"><a href="functions.html#section-10.2.4"><i class="fa fa-check"></i><b>10.2.4</b> 加入參數</a></li>
+<li class="chapter" data-level="10.2.5" data-path="functions.html"><a href="functions.html#section-10.2.5"><i class="fa fa-check"></i><b>10.2.5</b> 有多個輸出的函數</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="functions.html"><a href="functions.html#section-10.3"><i class="fa fa-check"></i><b>10.3</b> 變數範圍</a></li>
+<li class="chapter" data-level="10.4" data-path="functions.html"><a href="functions.html#lambda-"><i class="fa fa-check"></i><b>10.4</b> 匿名函數（lambda 函數）</a></li>
+<li class="chapter" data-level="10.5" data-path="functions.html"><a href="functions.html#section-10.5"><i class="fa fa-check"></i><b>10.5</b> 錯誤處理</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Hello Py: Python 程式設計</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="section-4" class="section level1">
+<h1><span class="header-section-number">4</span> 基本資料類型</h1>
+<p>暸解可以運用的資料類型是學習一個程式語言的基本功（其他像是之後章節會涵蓋的資料容器，流程控制或者迭代語法也歸類於基本功），它的枯燥無味常讓初學者感到索然無味，但是它對未來應用的重要性絕對無庸置疑，我們用一張表格整理 Python 的基本資料類型：</p>
+<table>
+<thead>
+<tr class="header">
+<th>基本資料類型</th>
+<th>基本資料類型英文</th>
+<th>範例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>整數</td>
+<td>int</td>
+<td><code>87</code></td>
+</tr>
+<tr class="even">
+<td>浮點數</td>
+<td>float</td>
+<td><code>8.7</code></td>
+</tr>
+<tr class="odd">
+<td>文字</td>
+<td>str</td>
+<td><code>&quot;Hello Py&quot;</code></td>
+</tr>
+<tr class="even">
+<td>布林</td>
+<td>bool</td>
+<td><code>True</code>、<code>False</code></td>
+</tr>
+</tbody>
+</table>
+<div id="section-4.1" class="section level2">
+<h2><span class="header-section-number">4.1</span> 整數與浮點數</h2>
+<p>簡單的應用就是將 Python 當作計算機對整數（int）與浮點數（float）進行數學運算，常用的運算符號有：</p>
+<table>
+<thead>
+<tr class="header">
+<th>運算符號</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>+</code></td>
+<td>加</td>
+</tr>
+<tr class="even">
+<td><code>-</code></td>
+<td>減</td>
+</tr>
+<tr class="odd">
+<td><code>*</code></td>
+<td>乘</td>
+</tr>
+<tr class="even">
+<td><code>/</code></td>
+<td>除</td>
+</tr>
+<tr class="odd">
+<td><code>**</code></td>
+<td>次方</td>
+</tr>
+<tr class="even">
+<td><code>%</code></td>
+<td>回傳餘數</td>
+</tr>
+<tr class="odd">
+<td><code>//</code></td>
+<td>回傳商數</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">+</span> <span class="dv">7</span>)</code></pre></div>
+<pre><code>## 15</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">-</span> <span class="dv">7</span>)</code></pre></div>
+<pre><code>## 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">*</span> <span class="dv">7</span>)</code></pre></div>
+<pre><code>## 56</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">/</span> <span class="dv">7</span>)</code></pre></div>
+<pre><code>## 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">**</span> <span class="dv">2</span>)</code></pre></div>
+<pre><code>## 64</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">%</span> <span class="dv">5</span>)</code></pre></div>
+<pre><code>## 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">8</span> <span class="op">//</span> <span class="dv">5</span>)</code></pre></div>
+<pre><code>## 1</code></pre>
+</div>
+<div id="section-4.2" class="section level2">
+<h2><span class="header-section-number">4.2</span> 文字</h2>
+<p>我們可以使用單引號（<code>'</code>）或雙引號（<code>&quot;</code>）來建立文字（str），假如我們希望在文字中納入單引號或雙引號，可以搭配使用斜線（<code>\</code>）進行跳脫。</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">luke <span class="op">=</span> <span class="st">&quot;Luke Skywalker&quot;</span>
+luke <span class="op">=</span> <span class="st">&#39;Luke Skywalker&#39;</span>
+oneal <span class="op">=</span> <span class="st">&quot;Shaquille O&#39;neal&quot;</span>
+oneal <span class="op">=</span> <span class="st">&#39;Shaquille O</span><span class="ch">\&#39;</span><span class="st">neal&#39;</span></code></pre></div>
+<div id="format-" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> .format 方法</h3>
+<p>字串也能夠進行格式化，只要使用 format() 方法：</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">oneal <span class="op">=</span> <span class="st">&quot;Shaquille O&#39;neal&quot;</span>
+<span class="co">&quot;{} is one of the greatest center in NBA history.&quot;</span>.<span class="bu">format</span>(oneal)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">oneal <span class="op">=</span> <span class="st">&quot;Shaquille O&#39;neal&quot;</span>
+steve <span class="op">=</span> <span class="st">&quot;Steve Nash&quot;</span>
+<span class="co">&quot;{} is one of the greatest center in NBA history, while {} is one of the greatest point guard.&quot;</span>.<span class="bu">format</span>(oneal, steve)</code></pre></div>
+</div>
+<div id="input-" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> input 函數</h3>
+<p>使用 <code>input()</code> 函數可以獲取使用者的輸入，以文字型別存在。</p>
+<pre><code>lucky_number = input(&quot;請輸入你的幸運數字：&quot;)
+print(&quot;我的幸運數字是 {}.format(lucky_number)&quot;)</code></pre>
+</div>
+</div>
+<div id="section-4.3" class="section level2">
+<h2><span class="header-section-number">4.3</span> 布林</h2>
+<p>當我們需要進行<strong>條件判斷</strong>的時候就需要仰賴布林（bool），布林只有 <code>True</code> 與 <code>False</code> 這兩個值。這裡值得注意的觀念是，Python 是對大小寫敏感（case-sensitive）的程式語言，我們輸入 <code>True</code> 會被成功識別為布林，但是 <code>TRUE</code> 則不會被識別成功喔！</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">True</span>)
+<span class="bu">print</span>(TRUE)</code></pre></div>
+<p>除了直接輸入布林，我們也可以藉由<strong>判斷運算符號</strong>進行<strong>條件判斷</strong>得到布林的輸出，常用的判斷運算符號有：</p>
+<table>
+<thead>
+<tr class="header">
+<th>判斷運算符號</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>==</code></td>
+<td>是否等於</td>
+</tr>
+<tr class="even">
+<td><code>!=</code></td>
+<td>是否不等於</td>
+</tr>
+<tr class="odd">
+<td><code>&gt;</code></td>
+<td>是否大於</td>
+</tr>
+<tr class="even">
+<td><code>&lt;</code></td>
+<td>是否小於</td>
+</tr>
+<tr class="odd">
+<td><code>&gt;=</code></td>
+<td>是否大於等於</td>
+</tr>
+<tr class="even">
+<td><code>&lt;=</code></td>
+<td>是否小於等於</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-4.4" class="section level2">
+<h2><span class="header-section-number">4.4</span> 邏輯運算符號</h2>
+<p>進行<strong>條件判斷</strong>的時候我們常常會需要連結多個條件，這時我們就可以使用邏輯運算符號來將條件連結起來，其中 <code>and</code> 也可以用 <code>&amp;</code> 符號代替、<code>or</code> 也可以用 <code>|</code> 符號代替：</p>
+<table>
+<thead>
+<tr class="header">
+<th>邏輯運算符號</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>and</code></td>
+<td>判斷兩側的條件是否都為 <code>True</code></td>
+</tr>
+<tr class="even">
+<td><code>or</code></td>
+<td>判斷兩側的條件是否至少有一側為 <code>True</code></td>
+</tr>
+<tr class="odd">
+<td><code>not</code></td>
+<td>將布林的 <code>True</code> 或 <code>False</code> 反轉</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">True</span> <span class="op">and</span> <span class="va">True</span>)</code></pre></div>
+<pre><code>## True</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">True</span> <span class="op">and</span> <span class="va">False</span>)</code></pre></div>
+<pre><code>## False</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">False</span> <span class="op">and</span> <span class="va">False</span>)</code></pre></div>
+<pre><code>## False</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="st">&quot;---&quot;</span>)</code></pre></div>
+<pre><code>## ---</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">True</span> <span class="op">or</span> <span class="va">True</span>)</code></pre></div>
+<pre><code>## True</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">True</span> <span class="op">or</span> <span class="va">False</span>)</code></pre></div>
+<pre><code>## True</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="va">False</span> <span class="op">or</span> <span class="va">False</span>)</code></pre></div>
+<pre><code>## False</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="st">&quot;---&quot;</span>)</code></pre></div>
+<pre><code>## ---</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="op">not</span> <span class="va">True</span>)</code></pre></div>
+<pre><code>## False</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="op">not</span> <span class="va">False</span>)</code></pre></div>
+<pre><code>## True</code></pre>
+</div>
+<div id="section-4.5" class="section level2">
+<h2><span class="header-section-number">4.5</span> 資料類型的轉換</h2>
+<p>不同的資料類型並不是壁壘分明、井水不犯河水的關係，我們也能使用函數進行資料類型的轉換，Python 中轉換資料類型的函數名稱跟資料類型是相互對應的，比如使用 <code>int()</code> 函數可以將輸入的物件轉換成為整數類型：</p>
+<table>
+<thead>
+<tr class="header">
+<th>轉換資料類型的函數</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>int()</code></td>
+<td>轉換資料類型為 <code>int</code></td>
+</tr>
+<tr class="even">
+<td><code>float()</code></td>
+<td>轉換資料類型為 <code>float</code></td>
+</tr>
+<tr class="odd">
+<td><code>bool()</code></td>
+<td>轉換資料類型為 <code>bool</code></td>
+</tr>
+<tr class="even">
+<td><code>str()</code></td>
+<td>轉換資料類型為 <code>str</code></td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="bu">int</span>(<span class="va">True</span>))</code></pre></div>
+<pre><code>## 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="bu">float</span>(<span class="va">True</span>))</code></pre></div>
+<pre><code>## 1.0</code></pre>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="bu">str</span>(<span class="va">True</span>))</code></pre></div>
+<pre><code>## True</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="get-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ifelse.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
