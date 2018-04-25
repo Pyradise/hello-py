@@ -20,6 +20,10 @@ Hello Py 是去蕪存菁的 Python 快速入門，課程目標在短時間內讓
 
 [Hello Py](https://bookdown.org/tonykuoyj/hello-py/)
 
+### 錄影清單
+
+[Hello Py：4/24-5/4](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUOnzjhhsXdqgX-qIPChtwH)
+
 ### 自主練習
 
 - [Codecademy](https://www.codecademy.com/catalog/language/python)
