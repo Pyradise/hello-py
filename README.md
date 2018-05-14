@@ -17,6 +17,10 @@ Hello Py 是去蕪存菁的 Python 快速入門，課程目標在短時間內讓
 - [靜態網頁擷取](https://pyradise.github.io/hello-py/08-static-scraper.slides#/)
 - [Firebase 入門](https://pyradise.github.io/hello-py/09-firebase-storage.slides#/)
 
+### 課程教科書
+
+[Hello Py](https://bookdown.org/tonykuoyj/hello-py/)
+
 ### 錄影清單
 
 [Hello Py：4/24-5/4](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUOnzjhhsXdqgX-qIPChtwH)
